@@ -18,7 +18,7 @@ package main
 import (
 	"flag"
 
-	"github.com/kollalabs/protoc-gen-openapi/generator"
+	"github.com/blademainer/protoc-gen-openapi/generator"
 	"google.golang.org/protobuf/compiler/protogen"
 )
 

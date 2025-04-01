@@ -35,7 +35,7 @@ import (
 	wk "github.com/google/gnostic/cmd/protoc-gen-openapi/generator/wellknown"
 	v3 "github.com/google/gnostic/openapiv3"
 
-	open_api_extensions "github.com/kollalabs/protoc-gen-openapi/openapi"
+	open_api_extensions "github.com/blademainer/protoc-gen-openapi/openapi"
 )
 
 type Configuration struct {
@@ -228,13 +228,13 @@ func (g *OpenAPIv3Generator) buildDocumentV3() *v3.Document {
 		d.Tags = pairs
 	}
 	// Sort the paths.
-	{
-		pairs := d.Paths.Path
-		sort.Slice(pairs, func(i, j int) bool {
-			return pairs[i].Name < pairs[j].Name
-		})
-		d.Paths.Path = pairs
-	}
+	//{
+	//	pairs := d.Paths.Path
+	//	sort.Slice(pairs, func(i, j int) bool {
+	//		return pairs[i].Name < pairs[j].Name
+	//	})
+	//	d.Paths.Path = pairs
+	//}
 	// Sort the schemas.
 	{
 		pairs := d.Components.Schemas.AdditionalProperties

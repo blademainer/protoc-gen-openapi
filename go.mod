@@ -1,6 +1,6 @@
-module github.com/kollalabs/protoc-gen-openapi
+module github.com/blademainer/protoc-gen-openapi
 
-go 1.23
+go 1.18
 
 require (
 	github.com/envoyproxy/protoc-gen-validate v0.9.1
